@@ -7,10 +7,6 @@ terraform {
   }
 }
 
-provider "aws" {
-  region = var.aws_region
-}
-
 resource "aws_cloudwatch_log_group" "this" {
   name              = "${var.deployment_name}-ecs-log-group"
   retention_in_days = var.log_retention_in_days

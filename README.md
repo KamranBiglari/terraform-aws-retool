@@ -107,7 +107,7 @@ No modules.
 | <a name="input_rds_username"></a> [rds\_username](#input\_rds\_username) | Master username for the RDS instance. Defaults to Retool. | `string` | `"retool"` | no |
 | <a name="input_retool_license_key"></a> [retool\_license\_key](#input\_retool\_license\_key) | Retool license key | `string` | `"EXPIRED-LICENSE-KEY-TRIAL"` | no |
 | <a name="input_secret_length"></a> [secret\_length](#input\_secret\_length) | Length of secrets generated (e.g. ENCRYPTION\_KEY, RDS\_PASSWORD). Defaults to 48. | `number` | `48` | no |
-| <a name="input_ssh_key_name"></a> [ssh\_key\_name](#input\_ssh\_key\_name) | SSH key name for accessing EC2 instances | `string` | n/a | yes |
+| <a name="input_ssh_key_name"></a> [ssh\_key\_name](#input\_ssh\_key\_name) | SSH key name for accessing EC2 instances | `string` | `""` | no |
 | <a name="input_subnet_ids"></a> [subnet\_ids](#input\_subnet\_ids) | Select at two subnets in your selected VPC. | `list(string)` | n/a | yes |
 | <a name="input_temporal_aurora_performance_insights_enabled"></a> [temporal\_aurora\_performance\_insights\_enabled](#input\_temporal\_aurora\_performance\_insights\_enabled) | Whether to enable Performance Insights for Temporal Aurora. Defaults to true. | `bool` | `true` | no |
 | <a name="input_temporal_aurora_performance_insights_retention_period"></a> [temporal\_aurora\_performance\_insights\_retention\_period](#input\_temporal\_aurora\_performance\_insights\_retention\_period) | The time in days to retain Performance Insights for Temporal Aurora. Defaults to 14. | `number` | `14` | no |
