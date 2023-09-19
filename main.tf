@@ -14,10 +14,10 @@ resource "aws_cloudwatch_log_group" "this" {
 
 resource "aws_db_instance" "this" {
   identifier                   = "${var.deployment_name}-rds-instance"
-  allocated_storage            = 80
+  allocated_storage            = var.rds_allocated_storage
   instance_class               = var.rds_instance_class
   engine                       = "postgres"
-  engine_version               = "13.7"
+  engine_version               = var.rds_engine_version
   db_name                      = "hammerhead_production"
   username                     = aws_secretsmanager_secret_version.rds_username.secret_string
   password                     = aws_secretsmanager_secret_version.rds_password.secret_string

@@ -23,7 +23,7 @@ variable "subnet_ids" {
 variable "ssh_key_name" {
   type        = string
   description = "SSH key name for accessing EC2 instances"
-  default = ""
+  default     = ""
 }
 
 variable "instance_type" {
@@ -108,8 +108,20 @@ variable "rds_username" {
 
 variable "rds_instance_class" {
   type        = string
-  default     = "db.m6g.large"
+  default     = "db.tg4.micro"
   description = "Instance class for RDS. Defaults to `db.m6g.large`"
+}
+
+variable "rds_engine_version" {
+  type        = string
+  default     = "13.7"
+  description = "Instance engine version for RDS. Defaults to `13.7`"
+}
+
+variable "rds_allocated_storage" {
+  type        = string
+  default     = 20
+  description = "Instance allocated storage for RDS. Defaults to `20`"
 }
 
 variable "rds_publicly_accessible" {

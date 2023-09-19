@@ -100,7 +100,9 @@ No modules.
 | <a name="input_min_instance_count"></a> [min\_instance\_count](#input\_min\_instance\_count) | Min/desired number of EC2 instances. Defaults to 4. | `number` | `3` | no |
 | <a name="input_minimum_healthy_percent"></a> [minimum\_healthy\_percent](#input\_minimum\_healthy\_percent) | Minimum percentage of tasks to run during a deployment. Defaults to 50. | `number` | `50` | no |
 | <a name="input_node_env"></a> [node\_env](#input\_node\_env) | Value for NODE\_ENV variable. Defaults to `production` and should not be set to any other value, regardless of environment. | `string` | `"production"` | no |
-| <a name="input_rds_instance_class"></a> [rds\_instance\_class](#input\_rds\_instance\_class) | Instance class for RDS. Defaults to `db.m6g.large` | `string` | `"db.m6g.large"` | no |
+| <a name="input_rds_allocated_storage"></a> [rds\_allocated\_storage](#input\_rds\_allocated\_storage) | Instance allocated storage for RDS. Defaults to `20` | `string` | `20` | no |
+| <a name="input_rds_engine_version"></a> [rds\_engine\_version](#input\_rds\_engine\_version) | Instance engine version for RDS. Defaults to `13.7` | `string` | `"13.7"` | no |
+| <a name="input_rds_instance_class"></a> [rds\_instance\_class](#input\_rds\_instance\_class) | Instance class for RDS. Defaults to `db.m6g.large` | `string` | `"db.tg4.micro"` | no |
 | <a name="input_rds_performance_insights_enabled"></a> [rds\_performance\_insights\_enabled](#input\_rds\_performance\_insights\_enabled) | Whether to enable Performance Insights for RDS. Defaults to true. | `bool` | `true` | no |
 | <a name="input_rds_performance_insights_retention_period"></a> [rds\_performance\_insights\_retention\_period](#input\_rds\_performance\_insights\_retention\_period) | The time in days to retain Performance Insights for RDS. Defaults to 14. | `number` | `14` | no |
 | <a name="input_rds_publicly_accessible"></a> [rds\_publicly\_accessible](#input\_rds\_publicly\_accessible) | Whether the RDS instance should be publicly accessible. Defaults to false. | `bool` | `true` | no |
