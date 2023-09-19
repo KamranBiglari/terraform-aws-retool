@@ -39,7 +39,7 @@ resource "aws_ecs_service" "retool" {
   name                               = "${var.deployment_name}-main-service"
   cluster                            = aws_ecs_cluster.this.id
   task_definition                    = aws_ecs_task_definition.retool.arn
-  desired_count                      = var.min_instance_count - 1
+  desired_count                      = var.min_instance_count
   deployment_maximum_percent         = var.maximum_percent
   deployment_minimum_healthy_percent = var.minimum_healthy_percent
   iam_role                           = var.launch_type == "EC2" ? aws_iam_role.service_role.arn : null

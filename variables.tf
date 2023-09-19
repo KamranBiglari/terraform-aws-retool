@@ -41,7 +41,7 @@ variable "max_instance_count" {
 variable "min_instance_count" {
   type        = number
   description = "Min/desired number of EC2 instances. Defaults to 4."
-  default     = 3
+  default     = 1
 }
 
 variable "deployment_name" {
@@ -96,7 +96,7 @@ variable "force_deployment" {
 
 variable "ecs_insights_enabled" {
   type        = string
-  default     = "enabled"
+  default     = "disabled"
   description = "Whether or not to enable ECS Container Insights. Defaults to `enabled`"
 }
 
