@@ -119,7 +119,7 @@ variable "rds_engine_version" {
 }
 
 variable "rds_allocated_storage" {
-  type        = string
+  type        = number
   default     = 20
   description = "Instance allocated storage for RDS. Defaults to `20`"
 }
@@ -224,6 +224,12 @@ variable "alb_idle_timeout" {
   type        = number
   default     = 60
   description = "The time in seconds that the connection is allowed to be idle. Defaults to 60."
+}
+
+variable "alb_internal" {
+  type        = bool
+  default     = false
+  description = "Whether the load balancer is internal or external. Defaults to false."
 }
 
 variable "cookie_insecure" {
