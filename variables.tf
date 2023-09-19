@@ -23,6 +23,7 @@ variable "subnet_ids" {
 variable "ssh_key_name" {
   type        = string
   description = "SSH key name for accessing EC2 instances"
+  default = ""
 }
 
 variable "instance_type" {
