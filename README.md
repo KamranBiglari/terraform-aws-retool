@@ -124,5 +124,8 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_aws_lb"></a> [aws\_lb](#output\_aws\_lb) | n/a |
+| <a name="output_deployment_name"></a> [deployment\_name](#output\_deployment\_name) | n/a |
 <!-- END_TF_DOCS -->
